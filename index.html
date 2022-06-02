@@ -1,0 +1,255 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Patel Aditya</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--Montserrat font-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+  <body>   
+    <section>
+      <!-- MOBILE NAVIGATION -->
+      <div class="w3-container w3-padding-16 w3-border-bottom w3-hide-medium w3-hide-large w3-sticky">
+        <a href="#home" class="w3-bar-item w3-button w3-hover-none">HOME</a>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="toggleNavigation()">&#9776;</a>
+      </div>
+      <div id="mobile-nav" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-sticky">
+        <a href="#about" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">ABOUT</a>
+        <a href="#workhistory" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">WORK HISTORY</a>
+        <a href="#projects" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">PROJECTS</a>
+        <a href="#contact" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">CONTACT</a>
+      </div>
+
+      <!-- SOCIAL SECTION -->
+      <section class="image-section w3-quarter w3-fixed w3-padding-small">
+        <!--IMAGE/AVATAR-->
+        <img src="profile1.jpg" class="w3-circle w3-border w3-border-sand" style="border-width: 3px !important;"/>
+        <h2 style="margin-top: 40px; color: whitesmoke;">Aditya Patel</h2>
+        <h3 style="margin-top: 15px; color: whitesmoke;">Java Full Stack Developer</h3>
+
+        <!--SOCIAL NETWORK BUTTONS-->
+        <div class="links w3-margin-top w3-padding-small">
+          <a class="icon-link w3-text-sand w3-hover-text-black" href="https://www.facebook.com/profile.php?id=100076029759699" target="_blank">
+             <i data-feather="facebook"></i>
+          </a>
+          <a class="icon-link w3-text-sand w3-hover-text-black" href="https://www.instagram.com/i.aadi10" target="_blank">
+             <i data-feather="instagram"></i>
+          </a>
+          <a class="icon-link w3-text-sand w3-hover-text-black" href="https://www.twitter.com/officialaadip" target="_blank">
+             <i data-feather="twitter"></i>
+          </a>
+          <a class="icon-link w3-text-sand w3-hover-text-black" href="https://www.linkedin.com/in/adityap10" target="_blank">
+             <i data-feather="linkedin"></i>
+          </a>
+        </div>
+        <!--CV DOWNLOAD BUTTON-->
+        <!-- <div class="w3-container w3-padding-16">
+          <a href="./resume.pdf" class="w3-purple w3-button w3-round-small w3-hover-teal w3-padding-large" target="_blank" download="resume.pdf">
+            <i data-feather="arrow-down" style="vertical-align: -0.35em;"></i>
+            <span class="w3-margin-left download-text">DOWNLOAD CV</span>
+          </a>
+        </div> -->
+      </section>
+
+      <!--CV CONTENT SECTION-->
+      <section class="w3-threequarter w3-padding-large w3-right">
+        <!--DESKTOP NAVIGATION-->
+        <div class="navBar w3-container w3-padding-large w3-border-bottom w3-hide-small w3-sticky navBar">
+          <a href="#home" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-black w3-hover-text-white w3-left w3-hide-small">HOME</a>
+          <a href="#contact" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-black w3-hover-text-white w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">CONTACT</a>
+          <a href="#projects" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-black w3-hover-text-white w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">PROJECTS</a>
+          <a href="#workhistory" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-black w3-hover-text-white w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">WORK HISTORY</a>
+          <a href="#about" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-black w3-hover-text-white w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">ABOUT</a>
+        </div>
+        <div class="content-container w3-margin-top-2">
+          <!--HOME SECTION-->
+          <div id="home" class="home w3-container w3-margin-top-4 w3-cursive">
+            <p style="font-style: italic; font-size:x-large;">"The mind is the limit. When you face your struggles, you overcome them."</p>
+          </div>
+
+          <!--ABOUT SECTION-->
+          <div id="about"></div>
+          <div class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">ABOUT</h2>
+            <p class="w3-margin-top-2"> 
+              Quest to work and learn with real world problems and vying ambience that enables me to cope with the emerging as well as latest technology 
+              and scope for widening the spectrum of my knowledge.
+            </p>
+            <p class="w3-margin-top-2"> 
+              Passionate full-stack engineer with 1+ year of hands-on experience in developing and delivering scalable website features using a 
+              wide range of front-end and back-end skills like HTML, CSS, JavaScript, Angular, NodeJs etc. Looking to further enhance my skills 
+              as the future full stack developer.
+            </p>
+          </div>
+
+          <!--WORK HISTORY-->
+          <div id="workhistory"></div>
+          <div class="w3-container w3-margin-top-20-percent w3-cursive">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">WORK HISTORY</h2>
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+
+              <div class="">
+                <h3>GS Lab, Vadodara</h3>
+                <h4>Java Full Stack Developer</h4>
+                <p>January 2022 - Present </p>
+                <ul>
+                  <li>Enhanced efficiency, scope and flexibility of applications.</li>
+                  <li>Write clean code and take responsibility for technical delivery.</li>
+                  <li>Developed, improved, and operated web-based software features.</li>
+                  <li>Creating and performing basic application testing with appropriate test cases.</li>
+                </ul>
+              </div>
+              <div class="">
+                <h3>GS Lab, Vadodara</h3>
+                <h4>Java Full Stack Developer Intern</h4>
+                <p>July 2021 - January 2022</p>
+                <ul>
+                  <li>Get the thorrow knowledge about the product</li>
+                  <li>Adapt new tools and technologies used in the product</li>
+                  <li>Deliver the expected requirements of the clients</li>
+                  <li>Interaction with the clients to discuss day to day goals</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!--PROJECTS SECTION-->
+          <div id="projects"></div>
+          <div class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">PROJECTS</h2>
+            <div class="w3-margin-top-2">
+              
+              <div class="">
+                <h3>Contact Centre Web Application (Gamma Co(UK))</h3>
+                <h4>GS Lab, Vadodara</h4>
+                <p>It is a cloud based Contact Centre web application, that povides communication services to different customers.
+                  I have worked on implementing new features for Admin and Agent portals which has various channels for 
+                  communication with the customers like Calls, Emails and Web Chat handling. It includes analysis of
+                  data and developing the features like generating time range reports, creating the widgets for efficient analysis of data etc.</p>
+              </div>
+
+              <div class="">
+                <h3>AR Based Android Navigation System</h3>
+                <h4>Gujarat Technological University (Final Year)</h4>
+                <p>An AR based android navigation application which enables users to experience
+                  more futuristic and real world navigation using Augmented Reality. This application allows users to navigate
+                  to their destinations by following the direction arrow shown in the real world when moving the mobile device
+                  around.</p>
+              </div>
+            </div>
+          </div>
+
+          <!--EDUCATION SECTION-->
+          <div class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">MY EDUCATION</h2>
+            <div class="w3-margin-top-2">
+
+              <div class="">
+                <h4>Gujarat Technological University, Ahmedabad, India</h4>
+                <h5>B.E Computer Science & Engineering</h5>
+                <p>June 2017 - July 2021</p>
+              </div>
+
+              <div class="">
+                <h4>Don Bosco High School, Vadodara, India</h4>
+                <h5>Higher Secondary - 12th Science Stream</h5>
+                <p>June 2015 - July 2017</p>
+              </div>
+            </div>
+          </div>
+
+          <!--SKILLS SECTION-->
+          <div class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">My Skills</h2>
+            <p class="w3-margin-top-2"> 
+            <!--SOFT SKILLS-->
+            <h4>Soft skills</h4>
+            <ul>
+              <li>Active Listening, Confidence &amp; Presenting</li>
+              <li>Critical Thinking &amp; Project Design</li>
+              <li>Collaboration, Planning &amp; Time Management</li>
+            </ul>
+
+            <!--TECHNICAL SKILLS-->
+            <h4>Technical skills</h4>
+              <ul>
+               <li>HTML5, CSS3, SCSS, TypeScript &amp; JavaScript</li>
+               <li>Angular 8, NodeJs, Docker Containers, JSON &amp; JAVA </li>
+               <li><b>Database: </b> MariaDB, Cassandra, Elastic Search &amp; Kibana</li>
+               <li><b> Version Control Systems: </b> Git, GitLab &amp; Mercurial</li>
+               <li>Scrum/Agile, JIRA &amp; Confluence</li>                                
+               <li><b>Documentation: </b>MS Office &amp; MS VISIO</li>
+              </ul>
+          </div>
+
+          <!--INTERESTS SECTION-->
+          <div class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">MY HOBBIES &amp; INTERESTS</h2>
+            <p class="w3-margin-top-2"> 
+              <p>I love mountain hiking and cycling in my free time</p>
+              <p>I like to play football</p>
+              <p>And sometimes I binge watching Netflix movies &amp; T.V shows</p>
+          </div>
+
+            <!--REFERENCE SECTION-->
+            <!-- <div class="w3-container w3-margin-top-2 w3-cursive">
+              <h3 class="w3-border-amber">MY REFERENCES</h3>
+              <h4>Jane Doe, CEO at Company-Z</h4>
+              <ul class="w3-ul" style="font-weight: 500;">
+                <li>+0123456789</li>
+                <li>janedoe@companyz.com</li>
+              </ul>
+              <h4>Margaret Johnson, Manager at Company-Y</h4>
+              <ul class="w3-ul" style="font-weight: 500;">
+                <li>+9876543210</li>
+                <li>mjohnson@companyy.com</li>
+              </ul>
+            </div>             -->
+          </div>
+
+          <!--CONTACT SECTION-->
+          <div id="contact"></div>
+          <div class="w3-container w3-margin-top-20-percent w3-cursive">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">MY CONTACT DETAILS</h3>
+            <div class="w3-margin-top-2" style="font-weight: 500;">
+              <p>Adress: Vadodara, Gujarat, India</p>
+              <p>Phone number: +919558796331</p>
+              <p>E-mail: aaditya720@proton.me</p>
+            </div>
+          </div>
+
+        <!--FOOTER-->
+        <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+        <footer class="w3-container w3-border-top w3-center w3-margin-top-4">
+          <p>Copyright© 2022 - Aditya Patel</p>
+           <p class="w3-small">Designed &amp; Developed By Aditya Patel</p>
+        <!-- End footer -->
+        </footer>
+
+        <!--END OF CV SECTION-->
+      </section>      
+    </section>
+    <script>
+      // Function to toggle mobile navigation
+      function toggleNavigation() {
+        let nav = document.getElementById("mobile-nav");
+        if (nav.classList.contains('w3-show')) {
+          nav.classList.remove('w3-show');
+        } else { 
+          nav.classList.add('w3-show');
+        }
+      }
+    </script>
+    <script>
+      // Script to load feather icons
+      feather.replace()
+    </script>
+  </body>
+</html>
